@@ -31,7 +31,8 @@ class Mtapi(object):
             self.routes.add(route_id)
             self.trains[direction].append({
                 'route': route_id,
-                'time': train_time
+                'time': train_time,
+                'countdown': int((train_time - datetime.datetime.now(TZ)).total_seconds())
             })
             self.last_update = feed_time
 
