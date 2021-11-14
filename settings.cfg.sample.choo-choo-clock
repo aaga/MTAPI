@@ -1,0 +1,7 @@
+MTA_KEY = 'your-mta-key-here'
+STATIONS_FILE = './data/stations.json'
+MAX_TRAINS=10
+MAX_MINUTES=45
+CACHE_SECONDS=1
+THREADED=False
+DEBUG = False
